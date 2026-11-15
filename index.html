@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>निपेन्द्र सिंह टेम्पू सर्विस | टेम्पू बुकिंग</title>
+<meta name="description" content="निपेन्द्र सिंह टेम्पू सर्विस – स्थानीय सवारी, शादी-ब्याह, ग्रुप ट्रैवल और आउटस्टेशन यात्रा के लिए टेम्पू बुकिंग अनुरोध। बुकिंग नंबर 8266964396।">
+<meta name="theme-color" content="#0b2a8a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0b2a8a; --navy2:#1746c9; --ink:#03050c; --saffron:#ffd400; --saffron2:#ffe266;
+  --white:#fff; --muted:#c3cbe0; --glass:rgba(255,255,255,.08); --line:rgba(255,255,255,.16);
+  --font:"Mukta","Hind","Noto Sans Devanagari","Mangal","Nirmala UI",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{font-family:var(--font);background:var(--ink);color:var(--white);line-height:1.65;font-size:17px;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid var(--saffron2);outline-offset:3px;border-radius:6px}
+.wrap{width:min(1120px,100% - 32px);margin-inline:auto}
+section{padding:72px 0}
+h1,h2,h3{line-height:1.25;font-weight:800}
+h2{font-size:clamp(1.7rem,5vw,2.4rem);margin-bottom:10px}
+.sub{color:var(--muted);max-width:60ch;margin-bottom:32px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:50px;padding:12px 24px;border-radius:999px;font:800 1.05rem var(--font);border:2px solid transparent;cursor:pointer;transition:transform .2s,box-shadow .2s,background .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:linear-gradient(135deg,var(--saffron),#f5b800);color:#141000;box-shadow:0 8px 24px rgba(255,212,0,.35)}
+.btn-ghost{background:var(--glass);border-color:var(--line);color:#fff;backdrop-filter:blur(8px)}
+.btn-wa{background:#25d366;color:#04210f}
+
+/* progress + nav */
+#progress{position:fixed;top:0;left:0;height:4px;width:0;background:var(--saffron);z-index:200}
+nav{position:sticky;top:0;z-index:100;background:rgba(3,5,12,.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-weight:800;font-size:1.15rem;display:flex;align-items:center;gap:8px}
+.brand b{color:var(--saffron)}
+.menu{display:flex;gap:22px;list-style:none;align-items:center}
+.menu a{font-weight:600;color:var(--muted);padding:6px 2px}
+.menu a:hover{color:var(--saffron2)}
+#burger{display:none;background:none;border:1px solid var(--line);color:#fff;font-size:1.5rem;width:46px;height:46px;border-radius:10px;cursor:pointer}
+@media(max-width:820px){
+  #burger{display:block}
+  .menu{position:absolute;top:64px;left:0;right:0;flex-direction:column;gap:0;background:var(--navy);display:none;border-bottom:1px solid var(--line)}
+  .menu.open{display:flex}
+  .menu li{width:100%}
+  .menu a{display:block;padding:16px 20px;border-top:1px solid var(--line)}
+}
+
+/* hero */
+.hero{position:relative;min-height:92vh;display:flex;align-items:center;padding:60px 0 120px;overflow:hidden;
+  background:radial-gradient(ellipse at 70% 20%,#2458e6 0%,var(--navy) 45%,var(--ink) 100%)}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.45}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(3,5,12,.95) 20%,rgba(3,5,12,.45) 70%,rgba(255,212,0,.18));}
+.hero .wrap{position:relative;z-index:2;display:grid;gap:36px;grid-template-columns:1.1fr .9fr;align-items:center}
+@media(max-width:900px){.hero .wrap{grid-template-columns:1fr}}
+.hero h1{font-size:clamp(2.3rem,9vw,4.4rem);letter-spacing:-.5px}
+.hero h1 span{display:block;color:var(--saffron)}
+.tag{display:inline-block;background:var(--glass);border:1px solid var(--line);padding:6px 16px;border-radius:999px;color:var(--saffron2);font-weight:600;margin-bottom:16px}
+.hero p.lead{font-size:1.2rem;color:#e6ebf8;margin:16px 0 28px;max-width:46ch}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px}
+.quick{background:var(--glass);border:1px solid var(--line);backdrop-filter:blur(14px);border-radius:22px;padding:22px;box-shadow:0 20px 50px rgba(0,0,0,.4)}
+.quick h2{font-size:1.25rem;margin-bottom:14px}
+.quick label{font-weight:600;font-size:.95rem;display:block;margin:10px 0 4px}
+.road{position:absolute;left:0;right:0;bottom:0;height:70px;background:#10131f;z-index:2;border-top:3px solid var(--saffron)}
+.road::before{content:"";position:absolute;left:0;right:0;top:50%;height:6px;transform:translateY(-50%);
+  background:repeating-linear-gradient(90deg,#fff 0 40px,transparent 40px 80px);animation:drive 1.2s linear infinite}
+.road i{position:absolute;bottom:26px;font-style:normal;font-size:2rem;animation:cruise 18s linear infinite;left:-60px}
+@keyframes drive{to{background-position:-80px 0}}
+@keyframes cruise{to{left:105%}}
+
+/* fields */
+input,select,textarea{width:100%;min-height:48px;padding:10px 14px;border-radius:12px;border:1.5px solid var(--line);background:rgba(3,5,12,.7);color:#fff;font:600 1rem var(--font)}
+input::placeholder,textarea::placeholder{color:#8e99b8}
+input[type=date],input[type=time]{color-scheme:dark}
+select option{background:var(--navy);color:#fff}
+.invalid{border-color:#ff6b6b!important}
+.err{color:#ffb4b4;font-size:.9rem;min-height:1.2em;margin-top:2px}
+
+.hero-photos{margin-top:28px;max-width:520px}
+.hero-photos h2{font-size:1.1rem;margin-bottom:10px;color:var(--saffron2)}
+.hp-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.hp-grid .shot{border-radius:14px}
+/* services */
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:linear-gradient(160deg,rgba(255,255,255,.09),rgba(255,255,255,.03));border:1px solid var(--line);border-radius:20px;padding:24px;transition:transform .25s,border-color .25s,box-shadow .25s}
+.card:hover{transform:translateY(-5px);border-color:var(--saffron);box-shadow:0 14px 30px rgba(0,0,0,.4)}
+.card .ic{font-size:2rem;width:58px;height:58px;display:grid;place-items:center;border-radius:16px;background:rgba(255,212,0,.15);margin-bottom:12px}
+.card h3{font-size:1.2rem;margin-bottom:6px}
+.card p{color:var(--muted)}
+#services{background:#fff}
+
+/* gallery */
+.gal{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.shot{position:relative;border-radius:20px;overflow:hidden;aspect-ratio:4/3;background:linear-gradient(135deg,var(--navy2),#1b1f2f);border:1px solid var(--line)}
+.shot img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.shot:hover img{transform:scale(1.06)}
+.shot figcaption{position:absolute;left:0;right:0;bottom:0;padding:30px 14px 12px;background:linear-gradient(transparent,rgba(0,0,0,.85));font-weight:600}
+.shot .fb{position:absolute;inset:0;display:none;place-items:center;font-size:4rem}
+.shot.broken img{display:none}.shot.broken .fb{display:grid}
+.note{color:var(--muted);font-size:.92rem;margin-top:16px}
+
+/* booking */
+#book{background:#fff}
+.form{background:var(--glass);border:1px solid var(--line);border-radius:24px;padding:clamp(18px,4vw,34px);backdrop-filter:blur(12px);box-shadow:0 24px 60px rgba(0,0,0,.45)}
+.fg{display:grid;gap:14px 18px;grid-template-columns:repeat(2,1fr)}
+@media(max-width:640px){.fg{grid-template-columns:1fr}}
+.fg label,.lbl{font-weight:600;display:block;margin-bottom:4px}
+.full{grid-column:1/-1}
+.radios{display:flex;gap:12px;flex-wrap:wrap}
+.radios label{display:flex;align-items:center;gap:8px;margin:0;padding:10px 18px;border:1.5px solid var(--line);border-radius:999px;cursor:pointer;min-height:48px}
+.radios input{width:20px;height:20px;min-height:0;accent-color:var(--saffron)}
+.notice{margin-top:18px;padding:14px 16px;border-left:4px solid var(--saffron);background:rgba(255,212,0,.1);border-radius:8px;color:#fff3b0;font-size:.97rem}
+.formbtns{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+
+/* fare */
+.fare{text-align:center;background:linear-gradient(135deg,var(--navy2),var(--navy));border:1px solid var(--line);border-radius:26px;padding:clamp(26px,6vw,56px)}
+.fare p{max-width:58ch;margin:12px auto 24px;font-size:1.12rem;color:#e6ebf8}
+.rates{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin:0 auto 26px;max-width:820px}
+.rate{background:rgba(0,0,0,.25);border:1px dashed var(--line);border-radius:14px;padding:14px}
+.rate small{display:block;color:var(--muted)}
+.rate strong{color:var(--saffron2)}
+
+/* why / contact */
+.why li{list-style:none;display:flex;gap:12px;align-items:flex-start;padding:16px 18px;background:var(--glass);border:1px solid var(--line);border-radius:16px}
+.why li span{font-size:1.5rem}
+.why{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+#contact{background:#fff}
+.owner{background:linear-gradient(150deg,rgba(255,212,0,.18),rgba(255,255,255,.04));border:1px solid var(--line);border-radius:24px;padding:clamp(22px,5vw,40px)}
+.owner h3{font-size:clamp(1.5rem,5vw,2.2rem);color:var(--saffron2)}
+.owner p{margin:4px 0}
+.num{font-size:clamp(1.6rem,6vw,2.4rem);font-weight:800;margin:14px 0 18px;display:block}
+.addr{margin-top:18px;color:var(--muted);font-size:.95rem}
+/* पता जोड़ने के लिए: ऊपर की .addr पंक्ति में पता लिखें */
+
+footer{padding:28px 0 100px;text-align:center;color:var(--muted);background:var(--ink);border-top:1px solid var(--line);font-size:.95rem}
+
+/* floating */
+.fab{position:fixed;right:16px;bottom:16px;z-index:150;display:flex;flex-direction:column;gap:10px;align-items:flex-end}
+.fab a,.fab button{min-height:54px;border-radius:999px;font:800 1rem var(--font);display:flex;align-items:center;gap:8px;padding:0 20px;border:0;cursor:pointer;box-shadow:0 8px 22px rgba(0,0,0,.5)}
+.fab .w{background:#25d366;color:#04210f}
+#top{width:48px;min-height:48px;padding:0;justify-content:center;background:var(--saffron);color:#141000;opacity:0;pointer-events:none;transition:opacity .3s}
+#top.show{opacity:1;pointer-events:auto}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .rv{opacity:1;transform:none}
+}
+
+/* सफेद सेक्शन */
+.light{color:#0b1330}
+.light h2{color:#0b2a8a}
+.light .sub,.light .card p,.light .addr{color:#44506f}
+.light .card{background:#fff;border-color:#d3dcf4;box-shadow:0 6px 20px rgba(11,42,138,.1)}
+.light .card:hover{border-color:var(--saffron);box-shadow:0 14px 30px rgba(11,42,138,.18)}
+.light .card .ic{background:#fff3b0}
+.light .card h3{color:#0b2a8a}
+.light .form{background:#f3f6ff;border-color:#cdd8f5;backdrop-filter:none;box-shadow:0 18px 40px rgba(11,42,138,.15)}
+.light input,.light select,.light textarea{background:#fff;color:#0b1330;border-color:#aebce8}
+.light input::placeholder,.light textarea::placeholder{color:#6a7698}
+.light input[type=date],.light input[type=time]{color-scheme:light}
+.light select option{background:#fff;color:#0b1330}
+.light .radios label{border-color:#aebce8;background:#fff}
+.light .err{color:#c0182b;font-weight:600}
+.light .invalid{border-color:#c0182b!important}
+.light .notice{background:#fff6c2;color:#3d3000;border-left-color:#f5b800}
+.light .btn-ghost{background:#0b2a8a;color:#fff;border-color:#0b2a8a}
+.light .owner{background:#f3f6ff;border-color:#cdd8f5}
+.light .owner h3{color:#0b2a8a}
+.light .owner p,.light .num{color:#0b1330}
+.light .btn-primary{color:#141000}
+</style>
+</head>
+<body>
+<div id="progress" aria-hidden="true"></div>
+
+<nav aria-label="मुख्य मेनू">
+  <div class="wrap nav-in">
+    <a href="#home" class="brand" aria-label="निपेन्द्र सिंह टेम्पू सर्विस – मुखपृष्ठ">🛺 <span>निपेन्द्र सिंह <b>टेम्पू सर्विस</b></span></a>
+    <button id="burger" aria-label="मेनू खोलें" aria-expanded="false" aria-controls="menu">☰</button>
+    <ul class="menu" id="menu">
+      <li><a href="#home">मुखपृष्ठ</a></li>
+      <li><a href="#services">सेवाएँ</a></li>
+      <li><a href="#gallery">गैलरी</a></li>
+      <li><a href="#book">बुकिंग</a></li>
+      <li><a href="#our-tempo">हमारा टेम्पू</a></li>
+      <li><a href="#fare">किराया</a></li>
+      <li><a href="#contact">संपर्क</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="home">
+  <!-- सुझाव: अपने असली टेम्पू की फोटो का लिंक यहाँ लगाएँ -->
+  <img class="hero-img" id="heroImg" alt="भारतीय सड़क पर सवारी वाहन की प्रतीकात्मक तस्वीर (केवल उदाहरण, मालिक का असली वाहन नहीं)"
+       src="https://images.unsplash.com/photo-1566296314736-6eaac1ca0cb9?auto=format&fit=crop&w=1400&q=60" loading="eager">
+  <div class="wrap">
+    <div>
+      <span class="tag">निपेन्द्र सिंह उर्फ अभय सिंह</span>
+      <h1>निपेन्द्र सिंह <span>टेम्पू सर्विस</span></h1>
+      <p class="lead">स्थानीय सफर से लेकर शादी-ब्याह और आउटस्टेशन यात्रा तक।<br><strong>आपका सफर, हमारी जिम्मेदारी।</strong></p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#book">🛺 अभी टेम्पू बुक करें</a>
+        <a class="btn btn-ghost" href="tel:8266964396">📞 सीधे कॉल करें</a>
+      </div>
+      <div class="hero-photos" id="our-tempo">
+        <h2>हमारे टेम्पू की कुछ तस्वीरें</h2>
+        <div class="hp-grid">
+          <figure class="shot"><img data-g alt="निपेन्द्र सिंह टेम्पू सर्विस के टेम्पू की तस्वीर 1" loading="lazy" src="photo.png"><span class="fb" aria-hidden="true">🛺</span></figure>
+          <figure class="shot"><img data-g alt="निपेन्द्र सिंह टेम्पू सर्विस के टेम्पू की तस्वीर 2" loading="lazy" src="photo2.png"><span class="fb" aria-hidden="true">🛺</span></figure>
+        </div>
+      </div>
+    </div>
+    <form class="quick" id="quick" novalidate aria-label="त्वरित बुकिंग कार्ड">
+      <h2>जल्दी बुकिंग शुरू करें</h2>
+      <label for="q_pick">पिकअप स्थान</label><input id="q_pick" placeholder="जहाँ से बैठना है">
+      <label for="q_drop">कहाँ जाना है?</label><input id="q_drop" placeholder="गंतव्य">
+      <label for="q_date">यात्रा की तारीख</label><input id="q_date" type="date">
+      <label for="q_pax">यात्रियों की संख्या</label><input id="q_pax" type="number" min="1" max="50" inputmode="numeric" placeholder="जैसे 6">
+      <button type="submit" class="btn btn-primary" style="width:100%;margin-top:16px">पूरा फॉर्म भरें</button>
+    </form>
+  </div>
+  <div class="road" aria-hidden="true"><i>🛺</i></div>
+</header>
+
+<main>
+<section id="services" class="light">
+  <div class="wrap">
+    <h2 class="rv">हमारी बुकिंग श्रेणियाँ</h2>
+    <p class="sub rv">अपनी जरूरत के अनुसार श्रेणी चुनकर बुकिंग अनुरोध भेजें। उपलब्धता की पुष्टि संपर्क के बाद ही होगी।</p>
+    <div class="grid">
+      <article class="card rv"><div class="ic">🏙️</div><h3>स्थानीय सवारी</h3><p>शहर और आसपास की यात्रा।</p></article>
+      <article class="card rv"><div class="ic">💍</div><h3>शादी एवं समारोह</h3><p>परिवार और मेहमानों के आवागमन के लिए।</p></article>
+      <article class="card rv"><div class="ic">👨‍👩‍👧‍👦</div><h3>ग्रुप ट्रैवल</h3><p>दोस्तों और परिवार के साथ यात्रा।</p></article>
+      <article class="card rv"><div class="ic">🛣️</div><h3>आउटस्टेशन यात्रा</h3><p>दूसरे शहरों की यात्रा के लिए।</p></article>
+      <article class="card rv"><div class="ic">🎉</div><h3>कार्यक्रम एवं निजी बुकिंग</h3><p>जरूरत के अनुसार टेम्पू बुकिंग।</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="wrap">
+    <h2 class="rv">यात्रा की झलक</h2>
+    <p class="sub rv">नीचे की तस्वीरें केवल प्रतीकात्मक हैं।</p>
+    <div class="gal">
+      <figure class="shot rv"><img data-g alt="भारतीय सड़क पर यात्रा का प्रतीकात्मक दृश्य" loading="lazy" src="https://images.unsplash.com/photo-1566296314736-6eaac1ca0cb9?auto=format&fit=crop&w=700&q=60"><span class="fb" aria-hidden="true">🛺</span><figcaption>शहर की सवारी</figcaption></figure>
+      <figure class="shot rv"><img data-g alt="भारत में सड़क यात्रा का प्रतीकात्मक दृश्य" loading="lazy" src="https://images.unsplash.com/photo-1532375810709-75b1da00537c?auto=format&fit=crop&w=700&q=60"><span class="fb" aria-hidden="true">🛣️</span><figcaption>आउटस्टेशन सफर</figcaption></figure>
+      <figure class="shot rv"><img data-g alt="भारतीय शादी समारोह का प्रतीकात्मक दृश्य" loading="lazy" src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=700&q=60"><span class="fb" aria-hidden="true">💍</span><figcaption>शादी-ब्याह</figcaption></figure>
+    </div>
+    <p class="note rv">ये तस्वीरें इंटरनेट स्टॉक स्रोतों की हैं, निपेन्द्र सिंह जी के वाहन की नहीं। असली वाहन की फोटो मिलने पर इन्हें बदला जा सकता है। फोटो न खुले तो सजावटी चित्र दिखेगा।</p>
+  </div>
+</section>
+
+<section id="book" class="light">
+  <div class="wrap">
+    <h2 class="rv">टेम्पू बुकिंग फॉर्म</h2>
+    <p class="sub rv">जानकारी भरें और व्हाट्सऐप पर भेजें। उपलब्धता और किराया बताकर आपसे संपर्क किया जाएगा।</p>
+    <form class="form rv" id="bookForm" novalidate>
+      <div class="fg">
+        <div><label for="name">ग्राहक का नाम *</label><input id="name" autocomplete="name" placeholder="आपका नाम"><div class="err" id="e_name"></div></div>
+        <div><label for="mobile">मोबाइल नंबर *</label><input id="mobile" type="tel" inputmode="numeric" maxlength="14" autocomplete="tel" placeholder="10 अंकों का नंबर"><div class="err" id="e_mobile"></div></div>
+        <div><label for="pickup">पिकअप स्थान *</label><input id="pickup" placeholder="जहाँ से बैठना है"><div class="err" id="e_pickup"></div></div>
+        <div><label for="drop">कहाँ जाना है? *</label><input id="drop" placeholder="गंतव्य"><div class="err" id="e_drop"></div></div>
+        <div><label for="date">यात्रा की तारीख *</label><input id="date" type="date"><div class="err" id="e_date"></div></div>
+        <div><label for="time">पिकअप का समय *</label><input id="time" type="time"><div class="err" id="e_time"></div></div>
+        <div><label for="pax">यात्रियों की संख्या *</label><input id="pax" type="number" min="1" max="50" inputmode="numeric" placeholder="जैसे 6"><div class="err" id="e_pax"></div></div>
+        <div><label for="type">यात्रा का प्रकार *</label>
+          <select id="type"><option value="">-- चुनें --</option><option>स्थानीय सवारी</option><option>शादी एवं समारोह</option><option>ग्रुप ट्रैवल</option><option>आउटस्टेशन यात्रा</option><option>कार्यक्रम एवं निजी बुकिंग</option></select>
+          <div class="err" id="e_type"></div></div>
+        <div class="full"><span class="lbl" id="retl">वापसी यात्रा चाहिए? *</span>
+          <div class="radios" role="radiogroup" aria-labelledby="retl">
+            <label><input type="radio" name="ret" value="हाँ"> हाँ</label>
+            <label><input type="radio" name="ret" value="नहीं"> नहीं</label>
+          </div><div class="err" id="e_ret"></div></div>
+        <div class="full"><label for="notes">अतिरिक्त जानकारी</label><textarea id="notes" rows="3" placeholder="सामान, रुकने का समय या कोई अन्य जरूरत (वैकल्पिक)"></textarea></div>
+      </div>
+      <div class="notice">ध्यान दें: यह वेबसाइट बुकिंग अपने-आप सेव या पक्की नहीं करती। फॉर्म आपका बुकिंग अनुरोध व्हाट्सऐप पर भेजने के लिए तैयार करता है। बुकिंग तभी पक्की मानी जाएगी जब निपेन्द्र सिंह जी आपके संदेश का उत्तर देकर पुष्टि करें।</div>
+      <div class="formbtns">
+        <button type="submit" class="btn btn-wa">💬 व्हाट्सऐप पर बुकिंग भेजें</button>
+        <a class="btn btn-ghost" href="tel:8266964396">📞 सीधे कॉल करें</a>
+      </div>
+      <div class="err" id="e_all" role="alert" style="margin-top:12px"></div>
+    </form>
+  </div>
+</section>
+
+<section id="fare">
+  <div class="wrap">
+    <div class="fare rv">
+      <h2>किराया एवं बुकिंग की जानकारी</h2>
+      <p>यात्रा की दूरी, तारीख, यात्रियों की संख्या और यात्रा के प्रकार के अनुसार किराया तय किया जाएगा। सटीक किराये और उपलब्धता के लिए संपर्क करें।</p>
+      <!-- किराया जोड़ने के लिए: नीचे का कंटेनर खाली छोड़ा गया है। JavaScript में RATES सूची भरते ही यहाँ कार्ड दिखने लगेंगे। -->
+      <div class="rates" id="rates"></div>
+      <button class="btn btn-primary" id="fareBtn">💬 किराया पूछें</button>
+    </div>
+  </div>
+</section>
+
+<section id="why" style="background:var(--navy)">
+  <div class="wrap">
+    <h2 class="rv">हमसे क्यों पूछें?</h2>
+    <ul class="why" style="margin-top:24px">
+      <li class="rv"><span>💰</span><div>बुकिंग से पहले किराये की जानकारी।</div></li>
+      <li class="rv"><span>📝</span><div>यात्रा की जरूरत के अनुसार बुकिंग अनुरोध।</div></li>
+      <li class="rv"><span>📞</span><div>फोन और व्हाट्सऐप से संपर्क।</div></li>
+      <li class="rv"><span>👪</span><div>परिवार एवं समूह यात्रा के लिए पूछताछ की सुविधा।</div></li>
+    </ul>
+  </div>
+</section>
+
+<section id="contact" class="light">
+  <div class="wrap">
+    <h2 class="rv">संपर्क करें</h2>
+    <div class="owner rv">
+      <h3>निपेन्द्र सिंह उर्फ अभय सिंह</h3>
+      <p><strong>पिता:</strong> श्री श्यामलाल सिंह</p>
+      <p><strong>माता:</strong> श्रीमती कमलेश देवी</p>
+      <span class="num">बुकिंग नंबर: <a href="tel:8266964396">8266964396</a></span>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="tel:8266964396">📞 अभी कॉल करें</a>
+        <a class="btn btn-wa" href="https://wa.me/918266964396" target="_blank" rel="noopener">💬 व्हाट्सऐप पर बुकिंग करें</a>
+      </div>
+      <p class="addr" id="addr">पता जल्द ही यहाँ जोड़ा जाएगा।</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <strong>निपेन्द्र सिंह टेम्पू सर्विस</strong> – आपका सफर, हमारी जिम्मेदारी।<br>
+    © <span id="yr"></span> निपेन्द्र सिंह उर्फ अभय सिंह। सर्वाधिकार सुरक्षित।
+  </div>
+</footer>
+
+<div class="fab">
+  <button id="top" aria-label="ऊपर जाएँ">↑</button>
+  <a class="w" href="https://wa.me/918266964396" target="_blank" rel="noopener" aria-label="व्हाट्सऐप पर बुकिंग करें">💬 बुकिंग</a>
+</div>
+
+<script>
+(function(){
+  var NUM="918266964396";
+  var $=function(id){return document.getElementById(id)};
+
+  // किराया सूची: असली दरें मिलने पर यहाँ जोड़ें, जैसे {route:"स्थानीय सवारी", price:"₹..."}
+  var RATES=[];
+  var rb=$("rates");
+  RATES.forEach(function(r){
+    var d=document.createElement("div");d.className="rate";
+    var s=document.createElement("small");s.textContent=r.route;
+    var b=document.createElement("strong");b.textContent=r.price;
+    d.appendChild(s);d.appendChild(b);rb.appendChild(d);
+  });
+  if(!RATES.length)rb.style.display="none";
+
+  $("yr").textContent=new Date().toLocaleDateString("hi-IN",{year:"numeric"});
+
+  // आज की तारीख (स्थानीय) → पिछली तारीख रोकना
+  var t=new Date(),pad=function(n){return String(n).padStart(2,"0")};
+  var today=t.getFullYear()+"-"+pad(t.getMonth()+1)+"-"+pad(t.getDate());
+  $("date").min=today;$("q_date").min=today;
+
+  function wa(msg){window.open("https://wa.me/"+NUM+"?text="+encodeURIComponent(msg),"_blank","noopener")}
+
+  // फॉर्म
+  var fields=["name","mobile","pickup","drop","date","time","pax","type"];
+  function setErr(id,msg){
+    var e=$("e_"+id);if(e)e.textContent=msg||"";
+    var f=$(id);if(f)f.classList.toggle("invalid",!!msg);
+  }
+  function validate(){
+    var ok=true,first=null;
+    function bad(id,m){setErr(id,m);ok=false;if(!first)first=id}
+    fields.forEach(function(f){setErr(f,"")});setErr("ret","");
+    var name=$("name").value.trim();
+    if(name.length<2)bad("name","कृपया अपना नाम लिखें।");
+    var m=$("mobile").value.replace(/[\s\-]/g,"").replace(/^(\+91|91|0)(?=\d{10}$)/,"");
+    if(!m)bad("mobile","कृपया मोबाइल नंबर लिखें।");
+    else if(!/^[6-9]\d{9}$/.test(m))bad("mobile","कृपया सही 10 अंकों का भारतीय मोबाइल नंबर लिखें।");
+    if(!$("pickup").value.trim())bad("pickup","कृपया पिकअप स्थान लिखें।");
+    if(!$("drop").value.trim())bad("drop","कृपया गंतव्य लिखें।");
+    var d=$("date").value;
+    if(!d)bad("date","कृपया यात्रा की तारीख चुनें।");
+    else if(d<today)bad("date","बीती हुई तारीख नहीं चुनी जा सकती।");
+    if(!$("time").value)bad("time","कृपया पिकअप का समय चुनें।");
+    var p=Number($("pax").value);
+    if(!$("pax").value)bad("pax","कृपया यात्रियों की संख्या लिखें।");
+    else if(!Number.isInteger(p)||p<1||p>50)bad("pax","यात्रियों की संख्या 1 से 50 के बीच पूरी संख्या में लिखें।");
+    if(!$("type").value)bad("type","कृपया यात्रा का प्रकार चुनें।");
+    var r=document.querySelector('input[name="ret"]:checked');
+    if(!r)bad("ret","कृपया वापसी यात्रा के लिए हाँ या नहीं चुनें।");
+    if(!ok){$("e_all").textContent="कृपया ऊपर लाल चिह्नित जानकारी ठीक करें।";var el=$(first==="ret"?"retl":first);el.scrollIntoView({behavior:"smooth",block:"center"});if(first!=="ret")el.focus()}
+    else $("e_all").textContent="";
+    return ok?{name:name,mobile:m,r:r.value}:null;
+  }
+  function fmtDate(d){var a=d.split("-");return a[2]+"/"+a[1]+"/"+a[0]}
+  function fmtTime(v){var a=v.split(":"),h=+a[0],ap=h>=12?"दोपहर/शाम/रात":"सुबह";
+    var h12=h%12||12;return pad(h12)+":"+a[1]+" ("+(h<12?"सुबह":h<16?"दोपहर":h<20?"शाम":"रात")+")"}
+  $("bookForm").addEventListener("submit",function(ev){
+    ev.preventDefault();
+    var v=validate();if(!v)return;
+    var notes=$("notes").value.trim()||"कोई नहीं";
+    var msg="नमस्ते निपेन्द्र सिंह जी,\n\nमुझे टेम्पू बुक करना है।\n\n"+
+      "ग्राहक का नाम: "+v.name+"\n"+
+      "मोबाइल नंबर: "+v.mobile+"\n"+
+      "पिकअप स्थान: "+$("pickup").value.trim()+"\n"+
+      "गंतव्य: "+$("drop").value.trim()+"\n"+
+      "यात्रा की तारीख: "+fmtDate($("date").value)+"\n"+
+      "पिकअप का समय: "+fmtTime($("time").value)+"\n"+
+      "यात्रियों की संख्या: "+$("pax").value+"\n"+
+      "यात्रा का प्रकार: "+$("type").value+"\n"+
+      "वापसी यात्रा: "+v.r+"\n"+
+      "अतिरिक्त जानकारी: "+notes+
+      "\n\nकृपया उपलब्धता और किराये की जानकारी बताएं।\n\nधन्यवाद।";
+    wa(msg);
+  });
+  fields.forEach(function(f){$(f).addEventListener("input",function(){setErr(f,"")})});
+
+  // हीरो कार्ड → मुख्य फॉर्म में जानकारी भेजना
+  $("quick").addEventListener("submit",function(ev){
+    ev.preventDefault();
+    $("pickup").value=$("q_pick").value;$("drop").value=$("q_drop").value;
+    if($("q_date").value)$("date").value=$("q_date").value;
+    $("pax").value=$("q_pax").value;
+    $("book").scrollIntoView({behavior:"smooth"});
+    setTimeout(function(){$("name").focus({preventScroll:true})},600);
+  });
+
+  // किराया पूछें
+  $("fareBtn").addEventListener("click",function(){
+    wa("नमस्ते निपेन्द्र सिंह जी,\n\nमुझे टेम्पू बुकिंग के लिए किराये और उपलब्धता की जानकारी चाहिए। कृपया बताएं।\n\nधन्यवाद।");
+  });
+
+  // मेनू
+  var menu=$("menu"),bg=$("burger");
+  bg.addEventListener("click",function(){var o=menu.classList.toggle("open");bg.setAttribute("aria-expanded",o);bg.textContent=o?"✕":"☰"});
+  menu.addEventListener("click",function(e){if(e.target.tagName==="A"){menu.classList.remove("open");bg.setAttribute("aria-expanded","false");bg.textContent="☰"}});
+
+  // स्क्रॉल: प्रगति + ऊपर जाएँ
+  var top=$("top"),pr=$("progress");
+  function onScroll(){
+    var h=document.documentElement,max=h.scrollHeight-h.clientHeight;
+    pr.style.width=(max>0?h.scrollTop/max*100:0)+"%";
+    top.classList.toggle("show",h.scrollTop>500);
+  }
+  window.addEventListener("scroll",onScroll,{passive:true});onScroll();
+  top.addEventListener("click",function(){window.scrollTo({top:0,behavior:"smooth"})});
+
+  // चित्र विफल होने पर विकल्प
+  $("heroImg").addEventListener("error",function(){this.style.display="none"});
+  document.querySelectorAll("img[data-g]").forEach(function(im){
+    im.addEventListener("error",function(){im.parentNode.classList.add("broken")});
+  });
+
+  // सेक्शन एनीमेशन
+  var items=document.querySelectorAll(".rv");
+  if("IntersectionObserver" in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.12});
+    items.forEach(function(i){io.observe(i)});
+  }else items.forEach(function(i){i.classList.add("in")});
+})();
+</script>
+</body>
+</html>
